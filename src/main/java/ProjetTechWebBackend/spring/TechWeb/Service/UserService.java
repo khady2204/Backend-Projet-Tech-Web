@@ -3,70 +3,88 @@ package ProjetTechWebBackend.spring.TechWeb.Service;
 import ProjetTechWebBackend.spring.TechWeb.Entity.Role;
 import ProjetTechWebBackend.spring.TechWeb.Entity.User;
 import ProjetTechWebBackend.spring.TechWeb.Repository.UserRepository;
-import jakarta.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
 
 @Service
 public class UserService {
 
-    // Injection automatique du repository qui permet d'accéder à la base de données
     @Autowired
     private UserRepository userRepository;
 
-    // Injection du bean PasswordEncoder pour encoder (hasher) les mots de passe
     @Autowired
     private PasswordEncoder passwordEncoder;
 
-    // Ajouter un étudiant
-    public User addEtudiant(User etudiant) {
-        etudiant.setRole(Role.ETUDIANT);
-        etudiant.setUserPassword(passwordEncoder.encode(etudiant.getUserPassword()));
-        return userRepository.save(etudiant);
+    public User registerNewUser(User user) {
+        user.setRole(Role.ETUDIANT); // ou Role.ADMIN selon le besoin
+
+        user.setUserPassword(getEncodedPassword(user.getUserPassword()));
+        return userRepository.save(user);
     }
 
-    // Ajouter un admin
-    public User addAdmin(User admin) {
+    public User createAdmin() {
+        List<User> adminAccount = userRepository.findByRole(Role.ADMIN);
+        if (!adminAccount.isEmpty()) {
+            return adminAccount.get(0); // Admin déjà existant
+        }
+        User admin = new User();
+        admin.setUserPrenom("Admin");
+        admin.setUserNom("Admin");
+        admin.setUserEmail("admin@admin.com");
+        admin.setUserPassword(getEncodedPassword("admin123"));
         admin.setRole(Role.ADMIN);
-        admin.setUserPassword(passwordEncoder.encode(admin.getUserPassword()));
         return userRepository.save(admin);
+
     }
 
-    // Obtenir tous les utilisateurs
+    // Récupérer tous les utilisateurs
     public List<User> getAllUsers() {
         return userRepository.findAll();
     }
 
-    // Obtenir un utilisateur par ID
-    public Optional<User> getUserById(Long id) {
-        return userRepository.findById(id);
+    // Récupérer un utilisateur par son ID
+    public User getUserById(Long id) {
+        return userRepository.findById(id).orElse(null); // Renvoie null si l'utilisateur n'est pas trouvé
     }
 
-    // Supprimer un utilisateur
+    // Supprimer un utilisateur par ID
     public void deleteUser(Long id) {
         userRepository.deleteById(id);
     }
 
-    // Obtenir les utilisateurs selon le rôle
+    // Récupère tous les utilisateurs ayant un rôle spécifique
     public List<User> getUsersByRole(Role role) {
         return userRepository.findByRole(role);
     }
 
-    // Initialisation automatique d'un admin
-    @PostConstruct
-    public void initAdmin() {
-        if (userRepository.findByRole(Role.ADMIN).isEmpty()) {
-            User admin = new User();
-            admin.setUserNom("Admin");
-            admin.setUserPrenom("User");
-            admin.setUserEmail("admin@admin.com");
-            admin.setUserPassword(passwordEncoder.encode("admin123"));
-            admin.setRole(Role.ADMIN);
-            userRepository.save(admin);
+
+
+    public String getEncodedPassword(String password) {
+        return passwordEncoder.encode(password);
+    }
+
+
+    public List<User> getEtudiants() {
+        return userRepository.findByRole(Role.ETUDIANT);
+    }
+
+    public User updateStudent(Long id, User updatedUser) {
+        // Cherche l'étudiant par son ID
+        User existingUser = userRepository.findByIdAndRole(id, Role.ETUDIANT).orElse(null);
+
+        if (existingUser == null) {
+            return null; // L'étudiant avec ce rôle n'existe pas
         }
+
+        // Mise à jour des informations de l'étudiant
+        existingUser.setUserPrenom(updatedUser.getUserPrenom());
+        existingUser.setUserNom(updatedUser.getUserNom());
+        existingUser.setUserEmail(updatedUser.getUserEmail());
+        existingUser.setUserPassword(updatedUser.getUserPassword() != null ? getEncodedPassword(updatedUser.getUserPassword()) : existingUser.getUserPassword());
+
+        return userRepository.save(existingUser);
     }
 }

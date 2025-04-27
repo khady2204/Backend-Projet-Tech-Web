@@ -1,29 +1,54 @@
 package ProjetTechWebBackend.spring.TechWeb.Entity;
 
-import jakarta.persistence.CascadeType;
-import jakarta.persistence.EnumType;
-import jakarta.persistence.Enumerated;
-import jakarta.persistence.OneToOne;
+import jakarta.persistence.*;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.userdetails.UserDetails;
+
+import java.util.Collection;
+import java.util.Collections;
 import java.util.Date;
 
+@Entity
+@Table(name = "app_users")
 public class User {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private long id;
+
+    // Champs d'identification de l'utilisateur
     private String userEmail;
     private String userPrenom;
     private String userNom;
     private String userPassword;
 
     // Champs spécifiques aux étudiants
-    private String promo;
-    private int anneeDebut;
-    private int anneeSortie;
-    private String diplome;
-    private String autresFormations;
     private java.util.Date dateNaissance;
-
+    private String promo;
+    private int annee;
+    private String Niveau;
+    private String INE;
+    private String ENO;
 
     @Enumerated(EnumType.STRING)
     private Role role;
+
+
+    public String getENO() {
+        return ENO;
+    }
+
+    public void setENO(String ENO) {
+        this.ENO = ENO;
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
 
     public String getUserEmail() {
         return userEmail;
@@ -57,22 +82,12 @@ public class User {
         this.userPassword = userPassword;
     }
 
-    public Role getRole() {
-        return role;
+    public Date getDateNaissance() {
+        return dateNaissance;
     }
 
-    public void setRole(Role role) {
-        this.role = role;
-    }
-
-    private String formation;
-
-    public String getFormation() {
-        return formation;
-    }
-
-    public void setFormation(String formation) {
-        this.formation = formation;
+    public void setDateNaissance(Date dateNaissance) {
+        this.dateNaissance = dateNaissance;
     }
 
     public String getPromo() {
@@ -83,45 +98,50 @@ public class User {
         this.promo = promo;
     }
 
-    public int getAnneeDebut() {
-        return anneeDebut;
+    public int getAnnee() {
+        return annee;
     }
 
-    public void setAnneeDebut(int anneeDebut) {
-        this.anneeDebut = anneeDebut;
+    public void setAnnee(int annee) {
+        this.annee = annee;
     }
 
-    public int getAnneeSortie() {
-        return anneeSortie;
+    public String getNiveau() {
+        return Niveau;
     }
 
-    public void setAnneeSortie(int anneeSortie) {
-        this.anneeSortie = anneeSortie;
+    public void setNiveau(String niveau) {
+        Niveau = niveau;
     }
 
-    public String getDiplome() {
-        return diplome;
+    public String getINE() {
+        return INE;
     }
 
-    public void setDiplome(String diplome) {
-        this.diplome = diplome;
+    public void setINE(String INE) {
+        this.INE = INE;
     }
 
-    public String getAutresFormations() {
-        return autresFormations;
+    public String getFormations() {
+        return formations;
     }
 
-    public void setAutresFormations(String autresFormations) {
-        this.autresFormations = autresFormations;
+    public void setFormations(String formations) {
+        this.formations = formations;
     }
 
-    public Date getDateNaissance() {
-        return dateNaissance;
+    public Role getRole() {
+        return role;
     }
 
-    public void setDateNaissance(Date dateNaissance) {
-        this.dateNaissance = dateNaissance;
+    public void setRole(Role role) {
+        this.role = role;
     }
+
+    private String formations;
+
+
+
 
 
 }
