@@ -1,0 +1,6 @@
+ProjetTechWebBackend\spring\TechWeb\Entity\Role.class
+ProjetTechWebBackend\spring\TechWeb\Controller\UserController.class
+ProjetTechWebBackend\spring\TechWeb\Repository\UserRepository.class
+ProjetTechWebBackend\spring\TechWeb\Entity\User.class
+ProjetTechWebBackend\spring\TechWeb\TechWebApplication.class
+ProjetTechWebBackend\spring\TechWeb\Service\UserService.class

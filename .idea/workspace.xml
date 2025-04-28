@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5d33df2e-8344-47d1-8955-42055fd1263b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ProjetTechWebBackend/spring/TechWeb/Configuration/JwtAuthenticationEntryPoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ProjetTechWebBackend/spring/TechWeb/InitAdmin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ProjetTechWebBackend/spring/TechWeb/Configuration/CorsConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ProjetTechWebBackend/spring/TechWeb/Configuration/CorsConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ProjetTechWebBackend/spring/TechWeb/Configuration/JwtFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ProjetTechWebBackend/spring/TechWeb/Configuration/JwtFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ProjetTechWebBackend/spring/TechWeb/Configuration/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ProjetTechWebBackend/spring/TechWeb/Configuration/SecurityConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ProjetTechWebBackend/spring/TechWeb/Controller/JwtController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ProjetTechWebBackend/spring/TechWeb/Controller/JwtController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ProjetTechWebBackend/spring/TechWeb/Controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ProjetTechWebBackend/spring/TechWeb/Controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ProjetTechWebBackend/spring/TechWeb/Entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ProjetTechWebBackend/spring/TechWeb/Entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ProjetTechWebBackend/spring/TechWeb/Repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ProjetTechWebBackend/spring/TechWeb/Repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ProjetTechWebBackend/spring/TechWeb/Service/JwtService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ProjetTechWebBackend/spring/TechWeb/Service/JwtService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ProjetTechWebBackend/spring/TechWeb/Service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ProjetTechWebBackend/spring/TechWeb/Service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ProjetTechWebBackend/spring/TechWeb/Util/JwtUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ProjetTechWebBackend/spring/TechWeb/Util/JwtUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2vbI3Red989LxKUq3eecC70XfX9" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.TechWebApplication.executor": "Run",
+    "JUnit.TechWebApplicationTests.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/thinkPad/Downloads/TechWebRectifié",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="ProjetTechWebBackend.spring.TechWeb.Repository" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5d33df2e-8344-47d1-8955-42055fd1263b" name="Changes" comment="" />
+      <created>1744407146397</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1744407146397</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ProjetTechWebBackend/spring/TechWeb/Configuration/CorsConfiguration.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ProjetTechWebBackend/spring/TechWeb/Entity/Role.java</url>
+          <line>2</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
