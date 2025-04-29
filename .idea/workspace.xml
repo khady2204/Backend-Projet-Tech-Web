@@ -5,20 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d33df2e-8344-47d1-8955-42055fd1263b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ProjetTechWebBackend/spring/TechWeb/Configuration/JwtAuthenticationEntryPoint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ProjetTechWebBackend/spring/TechWeb/InitAdmin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ProjetTechWebBackend/spring/TechWeb/Configuration/CorsConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ProjetTechWebBackend/spring/TechWeb/Configuration/CorsConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ProjetTechWebBackend/spring/TechWeb/Configuration/JwtFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ProjetTechWebBackend/spring/TechWeb/Configuration/JwtFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ProjetTechWebBackend/spring/TechWeb/Configuration/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ProjetTechWebBackend/spring/TechWeb/Configuration/SecurityConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ProjetTechWebBackend/spring/TechWeb/Controller/JwtController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ProjetTechWebBackend/spring/TechWeb/Controller/JwtController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ProjetTechWebBackend/spring/TechWeb/Controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ProjetTechWebBackend/spring/TechWeb/Controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ProjetTechWebBackend/spring/TechWeb/Entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ProjetTechWebBackend/spring/TechWeb/Entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ProjetTechWebBackend/spring/TechWeb/Repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ProjetTechWebBackend/spring/TechWeb/Repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ProjetTechWebBackend/spring/TechWeb/Service/JwtService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ProjetTechWebBackend/spring/TechWeb/Service/JwtService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ProjetTechWebBackend/spring/TechWeb/Service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ProjetTechWebBackend/spring/TechWeb/Service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ProjetTechWebBackend/spring/TechWeb/Util/JwtUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ProjetTechWebBackend/spring/TechWeb/Util/JwtUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ProjetTechWebBackend/spring/TechWeb/Configuration/SecurityConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ProjetTechWebBackend/spring/TechWeb/Configuration/SecurityConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ProjetTechWebBackend/spring/TechWeb/Controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ProjetTechWebBackend/spring/TechWeb/Controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ProjetTechWebBackend/spring/TechWeb/Service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ProjetTechWebBackend/spring/TechWeb/Service/UserService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,17 +49,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.TechWebApplication.executor": "Run",
-    "JUnit.TechWebApplicationTests.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/thinkPad/Downloads/TechWebRectifié",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.TechWebApplication.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TechWebApplicationTests.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/thinkPad/Desktop/TechWeb/Backend/TechWeb&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="ProjetTechWebBackend.spring.TechWeb.Repository" />

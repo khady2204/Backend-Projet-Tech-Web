@@ -4,6 +4,7 @@ import ProjetTechWebBackend.spring.TechWeb.Entity.Role;
 import ProjetTechWebBackend.spring.TechWeb.Entity.User;
 import ProjetTechWebBackend.spring.TechWeb.Repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
@@ -87,4 +88,10 @@ public class UserService {
 
         return userRepository.save(existingUser);
     }
+
+    public User findByEmail(String email) {
+        return userRepository.findByUserEmail(email)
+                .orElseThrow(() -> new UsernameNotFoundException("Utilisateur non trouvé avec l'email: " + email));
+    }
+
 }

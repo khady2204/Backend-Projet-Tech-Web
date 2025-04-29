@@ -10,6 +10,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 
+import java.security.Principal;
 import java.util.List;
 import java.util.Optional;
 
@@ -87,6 +88,12 @@ public class UserController {
         } else {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Étudiant non trouvé.");
         }
+    }
+
+    @GetMapping("/etudiant/me")
+    public ResponseEntity<User> getMonProfil(Principal principal) {
+        User user = userService.findByEmail(principal.getName());
+        return ResponseEntity.ok(user);
     }
 
 }
